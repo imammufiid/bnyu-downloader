@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BNYU - Release Archive</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen flex flex-col">
+    <header class="py-8 bg-white shadow-md">
+      <nav class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between mb-4">
+        <div class="flex items-center space-x-4">
+            <div>
+              <div class="flex gap-2 items-end">
+                <h1 class="text-4xl font-bold text-blue-700">BNYU</h1>
+                <span class="text-sm opacity-75 mb-1">v1.0.0</span>
+              </div>
+              <p class="text-lg text-gray-600">Your friendly water reminder app</p>
+    
+            </div>
+          </div>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="index.html" class="text-blue-700 font-semibold hover:underline">Home</a>
+            <a href="archive.html" class="text-blue-700 font-semibold hover:underline">Release Archive</a>
+          </div>
+    </header>
+    <main class="flex-1 flex flex-col justify-center items-center px-4">
+      <section class="max-w-2xl w-full bg-white rounded-xl shadow-lg p-8 mt-8">
+        <h2 class="text-2xl font-semibold text-blue-600 mb-4">Release Archive</h2>
+        <p class="text-gray-700 mb-6">Browse and download previous versions of BNYU for all supported platforms.</p>
+        <div class="space-y-6">
+          <!-- Example Release Entry -->
+          <div class="border rounded-lg p-4 bg-blue-50">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <span class="font-bold text-blue-700">v1.0.0</span>
+                <span class="ml-2 text-gray-500 text-sm">Released: 2025-06-22</span>
+              </div>
+              <div class="flex flex-col md:flex-row gap-2 mt-2 md:mt-0">
+                <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377950990" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-sm">Mac (x64)</a>
+                <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377951005" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition text-sm">Mac (ARM64)</a>
+                <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377955090" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm">Windows</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more releases as needed -->
+        </div>
+      </section>
+    </main>
+    <footer class="py-6 text-center text-gray-500 text-sm mt-8">
+      &copy; 2024 BNYU. All rights reserved.
+    </footer>
+  </body>
+</html> 

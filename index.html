@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BNYU - Water Reminder App</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen flex flex-col">
-    <header class="py-8 bg-white shadow-md">
-      <div class="container mx-auto px-4 flex flex-col items-center">
-        <h1 class="text-4xl font-bold text-blue-700 mb-2">BNYU</h1>
-        <p class="text-lg text-gray-600">Your friendly water reminder app</p>
-      </div>
-    </header>
-    <main class="flex-1 flex flex-col justify-center items-center px-4">
-      <section class="max-w-2xl w-full bg-white rounded-xl shadow-lg p-8 mt-8">
-        <h2 class="text-2xl font-semibold text-blue-600 mb-4">Stay Hydrated, Stay Healthy!</h2>
-        <p class="text-gray-700 mb-6">
-          BNYU is a simple and effective water reminder app that helps you maintain your daily hydration goals. Never forget to drink water again!
-        </p>
-        <ul class="list-disc list-inside text-gray-700 mb-8 space-y-2">
-          <li>Customizable reminder intervals</li>
-          <li>Beautiful, distraction-free interface</li>
-          <li>Lightweight and easy to use</li>
-          <li>Works on both Mac and Windows</li>
-        </ul>
-        <div class="flex flex-col gap-4 justify-center items-center">
-          <div class="text-center mb-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Download BNYU</h3>
-            <p class="text-sm text-gray-600">Choose your platform</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNYU - Water Reminder App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen flex flex-col">
+  <header class="py-8 bg-white shadow-md">
+    <nav class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between mb-4">
+      <div class="flex items-center space-x-4">
+        <div>
+          <div class="flex gap-2 items-end">
+            <h1 class="text-4xl font-bold text-blue-700">BNYU</h1>
+            <span class="text-sm opacity-75 mb-1">v1.0.0</span>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-2xl">
-            <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15805977526/artifacts/3377677814" download class="flex flex-col items-center p-6 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105">
-              <span>Mac (Intel x64)</span>
-              <span class="text-xs opacity-75 mt-1">v1.0.0</span>
-            </a>
-            <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15805977526/artifacts/3377677939" download class="flex flex-col items-center p-6 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition transform hover:scale-105">
-              <span>Mac (ARM64)</span>
-              <span class="text-xs opacity-75 mt-1">v1.0.0</span>
-            </a>
-            <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15805977526/artifacts/3377680412" download class="flex flex-col items-center p-6 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition transform hover:scale-105">
-              <span>Windows</span>
-              <span class="text-xs opacity-75 mt-1">v1.0.0</span>
-            </a>
-          </div>
+          <p class="text-lg text-gray-600">Your friendly water reminder app</p>
+
         </div>
-      </section>
-    </main>
-    <footer class="py-6 text-center text-gray-500 text-sm mt-8">
-      &copy; 2024 BNYU. All rights reserved.
-    </footer>
-  </body>
-</html> 
+      </div>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="index.html" class="text-blue-700 font-semibold hover:underline">Home</a>
+        <a href="archive.html" class="text-blue-700 font-semibold hover:underline">Release Archive</a>
+      </div>
+    </nav>
+    <div class="container mx-auto px-4 flex flex-col items-center">
+    </div>
+  </header>
+  <main class="flex-1 flex flex-col justify-center items-center px-4">
+    <section class="max-w-2xl w-full bg-white rounded-xl shadow-lg p-8 mt-8">
+      <h2 class="text-2xl font-semibold text-blue-600 mb-4">Stay Hydrated, Stay Healthy!</h2>
+      <p class="text-gray-700 mb-6">
+        BNYU is a simple and effective water reminder app that helps you maintain your daily hydration goals. Never
+        forget to drink water again!
+      </p>
+      <ul class="list-disc list-inside text-gray-700 mb-8 space-y-2">
+        <li>Customizable reminder intervals</li>
+        <li>Beautiful, distraction-free interface</li>
+        <li>Lightweight and easy to use</li>
+        <li>Works on both Mac and Windows</li>
+      </ul>
+      <div class="flex flex-col gap-4 justify-center items-center">
+        <div class="text-center mb-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Download BNYU</h3>
+          <p class="text-sm text-gray-600">Choose your platform</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-2xl">
+          <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377950990"
+            download
+            class="flex flex-col items-center p-6 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105">
+            <span>Mac (Intel x64)</span>
+          </a>
+          <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377951005"
+            download
+            class="flex flex-col items-center p-6 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition transform hover:scale-105">
+            <span>Mac (ARM64)</span>
+          </a>
+          <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377955090"
+            download
+            class="flex flex-col items-center p-6 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition transform hover:scale-105">
+            <span>Windows</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-6 text-center text-gray-500 text-sm mt-8">
+    &copy; 2024 BNYU. All rights reserved.
+  </footer>
+</body>
+
+</html>
