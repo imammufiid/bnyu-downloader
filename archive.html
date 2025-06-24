@@ -30,6 +30,30 @@
         <p class="text-gray-700 mb-6">Browse and download previous versions of BNYU for all supported platforms.</p>
         <div class="space-y-6">
           <!-- Example Release Entry -->
+          <div class="border rounded-lg p-4 bg-blue-50 mb-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <span class="font-bold text-blue-700">v1.1.0</span>
+                <span class="ml-2 text-gray-500 text-sm">Released: 2025-06-24</span>
+              </div>
+              <div class="flex flex-col md:flex-row gap-2 mt-2 md:mt-0">
+                <a href="https://github.com/imammufiid/bnyu-app/actions/runs/15849745668/artifacts/3391620595" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-sm">Mac (x64)</a>
+                <a href="https://github.com/imammufiid/bnyu-app/actions/runs/15849745668/artifacts/3391618546" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition text-sm">Mac (ARM64)</a>
+                <a href="https://github.com/imammufiid/bnyu-app/actions/runs/15849745668/artifacts/3391629143" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm">Windows</a>
+              </div>
+            </div>
+            <button type="button" class="release-toggle flex items-center mt-4 text-blue-700 hover:underline focus:outline-none">
+              <span class="mr-2">Release Notes</span>
+              <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="mt-2 bg-white rounded p-4 border border-blue-100 hidden">
+              <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                <li>New feature: Feedback form for user suggestions</li>
+                <li>Added support for light/dark mode</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Example Release Entry -->
           <div class="border rounded-lg p-4 bg-blue-50">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between">
               <div>
@@ -42,13 +66,37 @@
                 <a href="https://github.com/imammufiid/bnyu-reminder-app/actions/runs/15807181550/artifacts/3377955090" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm">Windows</a>
               </div>
             </div>
+            <button type="button" class="release-toggle flex items-center mt-4 text-blue-700 hover:underline focus:outline-none">
+              <span class="mr-2">Release Notes</span>
+              <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="mt-2 bg-white rounded p-4 border border-blue-100 hidden">
+              <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                <li>Initial public release of BNYU Water Reminder</li>
+                <li>Customizable reminder intervals</li>
+                <li>Support for Mac (Intel x64 & ARM64) and Windows</li>
+                <li>Simple, distraction-free interface</li>
+                <li>Lightweight and easy to use</li>
+              </ul>
+            </div>
           </div>
           <!-- Add more releases as needed -->
         </div>
       </section>
     </main>
     <footer class="py-6 text-center text-gray-500 text-sm mt-8">
-      &copy; 2024 BNYU. All rights reserved.
+      &copy; 2025 BNYU. All rights reserved.
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.release-toggle').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            const notes = btn.nextElementSibling;
+            notes.classList.toggle('hidden');
+            btn.querySelector('svg').classList.toggle('rotate-180');
+          });
+        });
+      });
+    </script>
   </body>
 </html> 
